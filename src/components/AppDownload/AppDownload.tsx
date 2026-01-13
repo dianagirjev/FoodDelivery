@@ -18,7 +18,11 @@ const AppDownload = () => {
           src={assets.play_store}
           alt="Google Play"
         />
-        <img className="cursor-pointer" src={assets.app_store} alt="Appstore" />
+        <img
+          className="cursor-pointer"
+          src={assets.app_store}
+          alt="App store"
+        />
       </div>
     </div>
   );

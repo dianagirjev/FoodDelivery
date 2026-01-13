@@ -1,4 +1,4 @@
-import React, { useState, type Dispatch, type SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
 
