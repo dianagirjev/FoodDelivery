@@ -1,4 +1,3 @@
-import React from "react";
 import "./PlaceOrder.css";
 import { useStore } from "../../context/StoreContext";
 
