@@ -1,0 +1,24 @@
+.delivery-info h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.input-item {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding: 10px;
+    outline-color: tomato;
+}
+
+@media (max-width: 1150px) {
+    .place-order {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .place-order {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
