@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 🍽️ Food Delivery Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Food Delivery is a modern web application that simulates an online food ordering and delivery platform. The project focuses on a clean, intuitive, and responsive user interface, allowing users to browse food items, add them to a cart, and review their orders.
 
-Currently, two official plugins are available:
+This application is a front-end demo and can be extended with additional features such as authentication, payments, and order tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## React Compiler
+👉 https://food-delivery-a49p.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📱 Fully responsive design (mobile & desktop)
+- 🍔 Browse food items with images and prices
+- 🛒 Add and remove products from the shopping cart
+- ➕ Update item quantities in the cart
+- 💰 Real-time cart total calculation
+- ⚡ Smooth and user-friendly UI interactions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- JavaScript
+- HTML5
+- CSS / Tailwind CSS
+- Vercel (deployment)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🎯 Project Purpose
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The main goal of this project is to practice and demonstrate:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Component-based architecture in React
+- State management using hooks and props
+- Responsive layouts
+- Basic e-commerce logic (cart management and totals)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is suitable for junior / entry-level web developers and can be used as a foundation for more complex applications.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Future Improvements
+
+- User authentication
+- Checkout and payment integration
+- Backend and database connection
+- Order history and tracking
+- Restaurant filtering and search functionality
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/food-delivery.git
+cd food-delivery
+npm install
+npm run dev
 ```
